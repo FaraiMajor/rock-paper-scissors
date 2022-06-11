@@ -7,17 +7,9 @@ let selection = "",
 
 
 function computerPlay() {
-    let play = Math.floor(Math.random() * 3) + 1;
-    if (play === 1) {
-        selection = "rock";
-        return selection;
-    } else if (play === 2) {
-        selection = "paper";
-        return selection;
-    } else {
-        selection = "scissors";
-        return selection;
-    }
+    let playChoice = ['rock', 'paper', 'scissors'];
+    let random = Math.floor(Math.random() * playChoice.length)
+    return playChoice[random];
 }
 
 
